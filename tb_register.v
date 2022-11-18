@@ -33,18 +33,18 @@ wire[31:0] result;
 
 
 reg_sync RegisterFile(	//inputs
-							.in_address1(in_address_1),
-							.in_address2(in_address_2),
-							.in_address3(read_address_2),
-							.in_address4(write_address_2),
+							.in_address_1(in_address_1),
+							.in_address_2(in_address_2),
+							.in_address_3(read_address_2),
+							.in_address_4(write_address_2),
 
 							
 							.write_address(write_address_1),
-							.write_address2(write_address_2),
+							.write_address_2(write_address_2),
 							.write_data(write_data),
-							.write_data2(write_data_2),
+							.write_data_2(write_data_2),
 							.write_enable(write_enable),
-							.write_enable2(write_enable_2),
+							.write_enable_2(write_enable_2),
 							
 							.pc_update(pc_update), 
 							.pc_write(pc_write), 
@@ -53,9 +53,9 @@ reg_sync RegisterFile(	//inputs
 							.clk(clk), 
 							
 							//outputs
-							.out_data1(out_data_1),
-							.out_data2(out_data_2),
-							.out_data3(),
+							.out_data_1(out_data_1),
+							.out_data_2(out_data_2),
+							.out_data_3(),
 							
 							
 							
