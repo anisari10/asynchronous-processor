@@ -1,7 +1,7 @@
-module reg_sync(in_address1,in_address2,in_address3,in_address4, 
-						out_data1,out_data2,out_data3,out_data4, 
+module reg_sync(in_address_1,in_address_2,in_address_3,in_address_4, 
+						out_data_1,out_data_2,out_data_3,out_data_4, 
 						write_address,write_data,write_enable,
-						write_address2, write_data2, write_enable2, 
+						write_address_2, write_data_2, write_enable_2, 
 						pc, pc_update, pc_write, 
 						cspr, cspr_write, cspr_update, clk );
 
@@ -10,24 +10,24 @@ parameter N = 32;			 //register data size
 reg [N-1:0] R [15:0];	//16, 32 bit registers
 
 //reading
-input [3:0]in_address1;
-input [3:0]in_address2;
-input [3:0]in_address3;
-input [3:0]in_address4;
-output reg [N-1:0]out_data1;
-output reg [N-1:0]out_data2;
-output reg [N-1:0]out_data3;
-output reg [N-1:0]out_data4;
+input [3:0]in_address_1;
+input [3:0]in_address_2;
+input [3:0]in_address_3;
+input [3:0]in_address_4;
+output reg [N-1:0]out_data_1;
+output reg [N-1:0]out_data_2;
+output reg [N-1:0]out_data_3;
+output reg [N-1:0]out_data_4;
 
 //writing
 input [3:0]write_address;
 input[N-1:0] write_data;
-input [3:0]write_address2;
-input[N-1:0] write_data2;
+input [3:0]write_address_2;
+input[N-1:0] write_data_2;
 
 input clk;
 input write_enable;
-input write_enable2;
+input write_enable_2;
 
 //pc
 output reg [N-1:0]pc;
@@ -71,15 +71,15 @@ end
 
 
 always@(negedge clk) begin
-	out_data1=R[in_address1];
-	out_data2=R[in_address2];
-	out_data3=R[in_address3];
-	out_data4=R[in_address4];
+	out_data_1=R[in_address_1];
+	out_data_2=R[in_address_2];
+	out_data_3=R[in_address_3];
+	out_data_4=R[in_address_4];
 
 	if(pc_write == 1) R[15] = pc_update;
 	if(cspr_write == 1) cspr = cspr_update;
 	if(write_enable==1) R[write_address]=write_data;
-	if(write_enable2==1) R[write_address2]=write_data2;
+	if(write_enable_2==1) R[write_address_2]=write_data_2;
 	
 end
 endmodule
