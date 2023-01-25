@@ -22,3 +22,4 @@ Other branches are maintained for debugging purposes. Please ignore them.
 
 Our main aim is to implement pipelining based asynchronous architecture and compare its performance with that of synchronous architecture. 
 
+
