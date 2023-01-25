@@ -1,6 +1,6 @@
 # Asynchronous Architecture
 
-In Asynchronous architecture, the global clock is designed to be dependent on the process the processor is asked to do. We designed a processor in which every elementary operation which requires clock triggering (in the case of synchronous processors) happens with handshaking protocol. This architecture has on edge over its synchronous counterpart in terms of speed and power efficiency (proved through simulaiotns for a specific case as explained below)
+In Asynchronous architecture, the global clock is designed to be dependent on the process the processor is asked to do. We designed a processor in which every elementary operation which requires clock triggering (in the case of synchronous processors) happens with handshaking protocol. This architecture has a clear edge over its synchronous counterpart in terms of speed and power efficiency (proved through simulaiotns for a specific case as explained below)
 
 ## A small-scale implementation of asynchronous repeated-multiplication operation. 
 
