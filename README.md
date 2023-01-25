@@ -1,4 +1,4 @@
-# Async_processor
+# Asynchronous Architecture
 
 In Asynchronous architecture, the global clock is designed to be dependent on the process the processor is asked to do. We designed a processor in which every elementary operation which requires clock triggering (in the case of synchronous processors) happens with handshaking protocol. This architecture has on edge over its synchronous counterpart in terms of speed and power efficiency (proved through simulaiotns for a specific case as explained below)
 
@@ -16,7 +16,7 @@ Each step above happens sequentially, one after the other, using Handshaking Pro
 
 #### For working codes, please go to [Working codes](https://github.com/cao-track-4-codes/Async_processor/tree/end-of-project-working-codes). The main module is not working as of now. We're still debugging the code.
 
-## Next step
+## Aim
 
-We are trying to implement pipelining in asynchronous architecture and compare its performance with synchronous. 
+Our main aim is to implement pipelining based asynchronous architecture and compare its performance with that of synchronous architecture. 
 
