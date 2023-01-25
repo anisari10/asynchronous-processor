@@ -14,7 +14,7 @@ In Asynchronous architecture, the global clock is designed to be dependent on th
 
 Each step above happens sequentially, one after the other, using Handshaking Protocol.
 
-#### For working codes, please go to [Working codes](https://github.com/cao-track-4-codes/Async_processor/tree/end-of-project-working-codes). The main module which combines all the implemented modules is not working as of now. We're still debugging the code.
+#### The main module which combines all the implemented modules is not working as of now. We're still debugging the code.
 
 Other branches are maintained for debugging purposes. Please ignore them.
 
