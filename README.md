@@ -16,7 +16,7 @@ Each step above happens sequentially, one after the other, using Handshaking Pro
 
 #### The main module which combines all the implemented modules is not working as of now. We're still debugging the code.
 
-Other branches are maintained for debugging purposes. Please ignore them.
+#### We've taken the template code from [chsasank](https://github.com/chsasank/ARM7)
 
 ## Aim
 
