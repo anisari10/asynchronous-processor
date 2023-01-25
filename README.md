@@ -14,3 +14,9 @@ In Asynchronous architecture, the global clock is designed to be dependent on th
 
 Each step above happens sequentially, one after the other, using Handshaking Protocol.
 
+#### The main module is not working as of now. We're still debugging the code.
+
+## Next step
+
+We are trying to implement pipelining in asynchronous architecture and compare its performance with synchronous. 
+
