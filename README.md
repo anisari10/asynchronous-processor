@@ -2,7 +2,9 @@
 
 In Asynchronous architecture, the global clock is designed to be dependent on the process the processor is asked to do. We designed a processor in which every elementary operation which requires clock triggering (in the case of synchronous processors) happens with handshaking protocol. This architecture has on edge over its synchronous counterpart in terms of speed and power efficiency (proved through simulaiotns for a specific case as explained below)
 
-This is a small-scale implementation of asynchronous repeated-multiplication operation. Following is the process flow: 
+## A small-scale implementation of asynchronous repeated-multiplication operation. 
+
+### Following is the process flow: 
 
 1. Data (given through cache testbench) are stored in cache. 
 2. When multiplication operation is requested (through cache testbench), operands (two data stored in different locations in cache) are sent to registers A and B. 
