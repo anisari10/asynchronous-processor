@@ -16,6 +16,8 @@ Each step above happens sequentially, one after the other, using Handshaking Pro
 
 #### For working codes, please go to [Working codes](https://github.com/cao-track-4-codes/Async_processor/tree/end-of-project-working-codes). The main module is not working as of now. We're still debugging the code.
 
+Other branches are maintained for debugging purposes. Please ignore them.
+
 ## Aim
 
 Our main aim is to implement pipelining based asynchronous architecture and compare its performance with that of synchronous architecture. 
