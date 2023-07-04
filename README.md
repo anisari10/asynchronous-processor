@@ -19,7 +19,7 @@ Each step above happens sequentially, one after the other, using Handshaking Pro
 #### We've taken the template code from [chsasank](https://github.com/chsasank/ARM7)
 
 ## Aim
-
+**Make the code synthesisable**.
 Our main aim is to implement pipelining based asynchronous architecture and compare its performance with that of synchronous architecture. 
 
 
